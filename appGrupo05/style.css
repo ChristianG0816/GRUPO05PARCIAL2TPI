@@ -1,1 +1,172 @@
 /*  style.css Grupo05 */
+  *{
+    padding: 0;
+    margin: 0;
+}
+#bloque{
+    padding: 5%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+}
+
+body{
+    padding: 5%;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(19, 0, 41);
+}
+h1{
+    font-size: 60px;
+    color: rgb(215, 215, 233);
+    text-align: center;
+    font-weight: bold;
+}
+h3{
+    font-size: 30px;
+    color: rgb(0, 0, 22);
+    text-align: center;
+}
+ul{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+}
+ul li{
+    font-size: 20px;
+    list-style: none;
+    line-height: 1.5em;
+    font-weight: bold;
+    
+}
+#bloque .info ul #autores li{
+    font-weight: normal;
+    font-size: 16px;
+}
+#but{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#but #butt{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+button{
+    border-radius: 15px;
+    width: 10em;
+    height: 3em;
+    color: cornsilk;
+    background-color: rgb(0, 0, 22);
+    border-color:rgb(0, 0, 22) ;
+
+}
+button:hover{
+    color: rgb(215, 215, 228);
+    background-color: rgb(146, 146, 146);
+    color: black;
+    border-color:rgb(146, 146, 146);
+    font-weight: bold;
+}
+#tabla{
+    background-color: none;
+    border-radius: 10%;
+    border-collapse: collapse;   
+    width:auto;
+    margin:auto;
+    text-align: center;
+}
+#tabla #price{
+    width: 100px;
+    text-align: center;
+    margin: 1%;
+}
+#tabla #foto{
+    width: 150px;
+    text-align: center;
+}
+#tabla #video{
+    width: 600px;
+    text-align: center;
+}
+#tabla #cate{
+    width: 175px;
+    text-align: center;
+}
+#tabla #opcion{
+    width: 175px;
+    text-align: center;
+}
+#tabla #desc{
+    width: 600px;
+    text-align: justify;
+}
+#tabla #id{
+    width: 50px;
+    text-align: center;
+}
+#filtroprods{
+    font-size: 20px;
+    text-align: left;
+    line-height: 2em;
+}
+#filtroprods p{
+    font-weight: bold;
+}
+#filtroprods ol{
+    padding-left: 2%;
+}
+
+img {
+    width:3cm;
+    height:3cm;
+}
+thead{
+    text-transform: uppercase;
+    text-align: center;
+}
+th #price {cursor:pointer;}
+#bloque #formAgregar{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    font-size: 18px;
+}
+#bloque #formAgregar label {
+    width: 40%;
+    display: block;
+    border: 0px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+  }
+#bloque #formAgregar input, select {
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+
+
+/*si chequea muestra los productos sin cheque desaparecen los productos*/
+input#c1:checked ~ table tbody tr.c1 { display: table-row; }
+input#c1:not(checked) ~ table tbody tr.c1 { display: none; }
+input#c2:checked ~ table tbody tr.c2 { display: table-row; }
+input#c2:not(checked) ~ table tbody tr.c2 { display: none; }
+input#c3:checked ~ table tbody tr.c3 { display: table-row; }
+input#c3:not(checked) ~ table tbody tr.c3 { display: none; }
+input#c4:checked ~ table tbody tr.c4 { display: table-row; }
+input#c4:not(checked) ~ table tbody tr.c4 { display: none; }

@@ -15,50 +15,85 @@
     <meta name="author" content="William Enrique Vásquez Mancia"/>
     <meta name="keywords" content="API Rest, JSON, CSS, HTML, Javascript"/>
     <meta name="description" content="Examen Parcial 2 TPI115-2021"/>
-    <title>Computadoras Personales</title>
+    <title>COMPUTADORAS PERSONALES</title>
     <script src="crud.js"></script>
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
 </head>
 <body>
-    <h1>Computadoras Personales</h1>
-    <form name="formAgregar" id="formAgregar">
-        <label>Nombre </label>
-        <input name="nombre" id="nombre" type="text" required>
-        <label>Descripción </label>
-        <input name="descripcion" id="descripcion" type="text" required>
-        <label>Precio </label>
-        <input name="precio" id="precio" type="number" step="any" min="0" required>
-        <label>Link Imagen </label>
-        <input name="lImagen" id="lImagen" type="text" required>
-        <label>Link Vídeo </label>
-        <input name="lVideo" id="lVideo" type="text" required>
-        <label>Categoría </label>
-        <select name="categoria" id="categoria">
-            <option value="Dell">Dell</option>
-            <option value="HP">HP</option>
-            <option value="Lenovo">Lenovo</option>
-            <option value="Apple">Apple</option>
-        </select>
-    </form>
-    <p><button onclick="agregar();">Agregar Computadora</button></p>
-    <p><button id="btnObtener" id="btnObtener" onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
-	<div id="listado" style="display:none;">
-        <form name="filtroprods" id="filtroprods">
-            <p>Categorias</p> 
-            <input type="checkbox" id="c1" value="c1" checked>Dell
-            <input type="checkbox" id="c2" value="c2" checked>HP
-            <input type="checkbox" id="c3" value="c3" checked>Lenovo
-            <input type="checkbox" id="c4" value="c4" checked>Apple 
-            <p>Precio</p>  
-            <input type="range" min="0" max="2500"> 
+    <h1>Computadoras Personales</h1><br><br>
+    <section id="bloque">
+        <section class="info">
+		
+            <ul><h3>DATOS PERSONALES</h3>
+                <li>Grupo de trabajo: 05</li>
+                <li>Autores:</li>
+                <ul id="autores">
+                    <li>Miguel Angel Amaya Rodriguez</li>
+                    <li>Christian Javier Ayala Guerra</li>
+                    <li>Diego José Ayala Guerra</li>
+                    <li>Luis Alonso Cornejo Jiménez</li>
+                    <li>Carolina Isabel Pineda Delgado</li>
+                    <li>José Gustavo Pineda Delgado</li>
+                    <li>William Enrique Vásquez Mancia</li>
+                </ul>
+            </ul>
             
-            <table id="tabla" border="1">
-                <thead>
-                    <tr><th>id</th><th>Nombre</th><th>Descripción</th><th id="price">Precio</th>
-                    <th>imagen</th><th>Video</th><th>Categoria</th><th>Opciones</th></tr>
-                </thead>
-                <tbody id="tbody"></tbody>
-            </table>
+        </section>
+            <br><br><h3>AGREGAR PRODUCTO</h3>
+        <form name="formAgregar" id="formAgregar">
+            <label>Nombre </label>
+            <input name="nombre" id="nombre" type="text" required>
+            <label>Descripción </label>
+            <input name="descripcion" id="descripcion" type="text" required>
+            <label>Precio </label>
+            <input name="precio" id="precio" type="number" step="any" min="0" required>
+            <label>Link Imagen </label>
+            <input name="lImagen" id="lImagen" type="text" required>
+            <label>Link Vídeo </label>
+            <input name="lVideo" id="lVideo" type="text" required>
+            <label>Categoría </label>
+            <select name="categoria" id="categoria">
+                <option value="Dell">Dell</option>
+                <option value="HP">HP</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Apple">Apple</option>
+            </select>
         </form>
-	</div>
+        <section id="but">
+            <section id="butt">
+                <p><button onclick="agregar();">Agregar Computadora</button>    <button id="btnObtener" id="btnObtener" onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
+            </section>
+        </section>
+        
+        
+        <div id="listado" style="display:none;">
+            <form name="filtroprods" id="filtroprods">
+                <br/><br/><h3>LISTADO DE COMPUTADORAS PERSONALES</h3>
+                <p>Categorias</p> 
+                <input type="checkbox" id="c1" value="c1" checked>Dell
+                <input type="checkbox" id="c2" value="c2" checked>HP
+                <input type="checkbox" id="c3" value="c3" checked>Lenovo
+                <input type="checkbox" id="c4" value="c4" checked>Apple 
+                <p>Precio</p>  
+                <input type="range" min="0" max="2500"> 
+                
+                <table id="tabla" border="1">
+                    <thead>
+                        <tr>
+                            <th id="id">id</th>
+                            <th >Nombre</th>
+                            <th id="desc">Descripción</th>
+                            <th id="price">Precio</th>
+                            <th id="foto">imagen</th>
+                            <th id="video">Video</th>
+                            <th id="cate">Categoria</th>
+                            <th id="opcion">Opciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody"></tbody>
+                </table>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
