@@ -89,7 +89,6 @@ function obtenerProductos() {
 
 //Agregar una nueva computadora a la base de datos
 window.addEventListener("load", function(){
-	obtenerProductos();
 	document.getElementById("nombre").focus();
 });
 function agregar(){
