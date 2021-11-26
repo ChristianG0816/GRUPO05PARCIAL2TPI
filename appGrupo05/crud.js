@@ -38,7 +38,7 @@ function listarProductos(productos) {
       descripcion=document.getElementsByClassName("Descripcion"); 
 	  price=document.getElementsByClassName("price");
 	  imagen=document.getElementsByClassName("imagen");  
-      video=document.getElementsByClassName("Videos");  
+      video=document.getElementsByClassName("Video");  
       categoria=document.getElementsByClassName("Categoria"); 
 	  if(orden===0) {orden=-1;price.innerHTML="price"}
 	  else
@@ -59,10 +59,8 @@ function listarProductos(productos) {
                 tr.setAttribute("class",catcode);
                 price[nfila].innerHTML="$"+productos[nfila].Precio;
                 imagen[nfila].innerHTML="<img src='"+productos[nfila].imagen+"'>";
-                
-                /*Creo que el video da problemas porque no cumple todas las especificaciones del iframe
-                y no podemos usar la etiqueta video porque no los tenemos en una carpeta en el proyecto
-                /*video[nfila].innerHTML="<iframe src='"+productos[nfila].Video+"'></iframe>"*/;
+                //video[nfila].innerHTML="<iframe src='"+productos[nfila].Video+"'></iframe>";
+				video[nfila].innerHTML="<a href='"+productos[nfila].Video+"' target='_blank'>"+ productos[nfila].Video +"</a>";
             }
 	}
 
