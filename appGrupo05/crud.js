@@ -130,7 +130,7 @@ function agregar(nombre, descripcion, precio, imagen,video,categoria){
 		 }
 	})
 	.then(res=>res.json())
-	.then(data=>productos=data);
+	.then(data=>data);
 	document.getElementById('nombre').value="";
     document.getElementById('descripcion').value="";
 	document.getElementById('precio').value="";
