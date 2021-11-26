@@ -57,17 +57,12 @@ function listarProductos(productos) {
                 catcode=codigoCat(productos[nfila].Categoria);
                 tr=categoria[nfila].parentElement;
                 tr.setAttribute("class",catcode);
+                price[nfila].innerHTML="$"+productos[nfila].Precio;
                 imagen[nfila].innerHTML="<img src='"+productos[nfila].imagen+"'>";
-
-                /*Estos dos dan problemas porque al intentar no se logran capturar bien 
-                    y al intentar poner el video hace que solo aparezca 1 fila 
-                */
-
-                //price[nfila].innerHTML="$"+productos[nfila].Precio;
-                //video[nfila].innerHTML="<video src='"+productos[nfila].Video+"'></video>";
                 
-                
-                
+                /*Creo que el video da problemas porque no cumple todas las especificaciones del iframe
+                y no podemos usar la etiqueta video porque no los tenemos en una carpeta en el proyecto
+                /*video[nfila].innerHTML="<iframe src='"+productos[nfila].Video+"'></iframe>"*/;
             }
 	}
 
