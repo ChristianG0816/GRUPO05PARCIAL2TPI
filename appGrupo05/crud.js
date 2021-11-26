@@ -87,6 +87,33 @@ function obtenerProductos() {
 
 }
 
+function agregar(){
+	var producto={
+		Nombre:document.getElementById('nombre').value,
+        Descripcion:document.getElementById('descripcion').value,
+		Precio:document.getElementById('precio').value,
+		Imagen:document.getElementById('lImagen').value,
+        Video:document.getElementById('lVideo').value,
+		Categoria:document.getElementById('categoria').value
+	}
+    var url='http://localhost:3000/productos';
+	fetch(url,
+	{ method:"POST",
+		body: JSON.stringify(producto),
+		headers: {
+			'Content-Type': 'application/json'
+		 }
+	})
+	.then(res=>res.json())
+	.then(data=>data);
+	document.getElementById('nombre').value="";
+    document.getElementById('descripcion').value="";
+	document.getElementById('precio').value="";
+	document.getElementById('lImagen').value="";
+    document.getElementById('lVideo').value="";
+	document.getElementById('categoria').value="";
+}
+
 function ordenarDesc(p_array_json, p_key) {
    p_array_json.sort(function (a, b) {
       if(a[p_key] > b[p_key]) return -1;

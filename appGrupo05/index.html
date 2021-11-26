@@ -20,9 +20,28 @@
 </head>
 <body>
     <h1>Computadoras Personales</h1>
+    <form name="formAgregar" id="formAgregar">
+        <label class="line">Nombre </label>
+        <input class="line" name="nombre" id="nombre" type="text">
+        <label class="line">Descripción </label>
+        <input class="line" name="descripcion" id="descripcion" type="text">
+        <label class="line">Precio </label>
+        <input class="line" name="precio" id="precio" type="number" step="any" min="0">
+        <label class="line">Link Imagen </label>
+        <input class="line" name="lImagen" id="lImage" type="text">
+        <label class="line">Link Vídeo </label>
+        <input class="line" name="lVideo" id="lVideo" type="text">
+        <label class="line">Categoría </label>
+        <select class="line" name="categoria" id="categoria">
+            <option value="1">Dell</option>
+            <option value="2">HP</option>
+            <option value="3">Lenovo</option>
+            <option value="4">Apple</option>
+        </select>
+    </form>
+    <p><button onclick="agregar();">Agregar Computadora</button></p>
     <p><button onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
 	<div id="listado" style="display:none;">
-    <!-- Aqui formulario de agregar-->
         <form name="filtroprods" id="filtroprods">
             <p>Categorias</p> 
             <input type="checkbox" id="c1" value="c1" checked>Dell
