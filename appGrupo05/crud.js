@@ -92,7 +92,7 @@ function agregar(){
 		Nombre:document.getElementById('nombre').value,
         Descripcion:document.getElementById('descripcion').value,
 		Precio:document.getElementById('precio').value,
-		Imagen:document.getElementById('lImagen').value,
+		imagen:document.getElementById('lImagen').value,
         Video:document.getElementById('lVideo').value,
 		Categoria:document.getElementById('categoria').value
 	}
