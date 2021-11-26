@@ -1,192 +1,328 @@
-  {
-    "categorias":[
-    {"id":1,"nombre":"Dell"},
-    {"id":2,"nombre":"HP"},
-    {"id":3,"nombre":"Lenovo"},
-    {"id":4,"nombre":"Apple"}
-    ],
-    "productos": [
-      {
-        "id": 1,
-        "Nombre": "Laptop Dell inspiron 3505 AMD Athlon 3050u de 15\"",
-        "Descripcion":"Laptop de 15 pulgadas con rendimiento capaz de responder en un diseño elegante con bordes angostos de dos lados, ExpressCharge y un procesador AMD Athlon Silver 3050U, las graficas vienen dadas con un procesador AMD Radeon Vega 8. Disfrute de más pantalla con bordes estrechos que permiten una experiencia de visualización expansiva La memoria de 256GB viene dada por la tecnología SSD.",
-        "Precio": "479.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1136413-1200-auto?v=637496863215230000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/8VMSuK678sE",
-        "Categoria":"Dell"
-      },
-      {
-        "id": 2,
-        "Nombre": "Laptop de 15\" inspiron touchscreen amd r5-3450u 8gb-256 ssd negra",
-        "Descripcion":"Laptop de 15 pulgadas con rendimiento capaz de responder en un diseño elegante con bordes angostos de dos lados, SSD PCIe, ExpressCharge y un procesador móvil AMD Ryzen 5-3450u . Almacenamiento en abundancia: las unidades de estado sólido (SSD) PCIe NVMe proporcionan un rendimiento más silencioso y con mayor capacidad de respuesta en comparación con las unidades de disco duro (HDD) tradicionales. Diseñada para mantenerlo en movimiento",
-        "Precio": "799.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1899277-1200-auto?v=637728432453700000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/v6dE9EjYBWs",
-        "Categoria":"Dell"
-      },
-      {
-        "id": 3,
-        "Nombre": "Laptop Dell Inspiron Intel Core i7-1135G de 15.6",
-        "Descripcion":"Con Windows 10 Home, reciba la mejor combinación de las funciones de Windows que ya conoce y las nuevas mejoras que le encantarán Vea, lea, mire, transmita por streaming, escuche y aprenda con los procesadores Intel® que ofrecen una amplia variedad de funcionalidades multimedia para entretenerlo y cautivarlo durante todo el día Junto con una memoria DDR4 de 8 GB, podrá realizar varias tareas al mismo tiempo y alternar fácilmente entre las aplicaciones abiertas, y con una memoria con 256 SSD para ejecutar tareas de la manera más rápida. Revestida en bordes delgados y elegantes, una pantalla FHD antirreflejo ofrece una imagen clara y brillante que es agradable a la vista. Conéctese a un televisor o un monitor con el puerto HDMI, descargue fotos mediante la ranura de tarjeta SD, disfrute de velocidades de transferencia rápidas en todos los accesorios con dos puertos USB 3.2 de 1.ª generación.",
-        "Precio": "1,049.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1169987-1200-auto?v=637508371518630000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/yrTWH1-jqlI",
-        "Categoria":"Dell"
-      },
-      {
-        "id": 4,
-        "Nombre": "Laptop de 14\" inspiron 3493 intel ci3-1005g1. 4gb - 128ssd",
-        "Descripcion":"El portátil Dell Inspirion 14 3494 tiene todo lo esencial que necesita y más, incluidos los últimos procesadores Intel, CinemaStream y CinemaSound. Dell i3493-3464BLK-PUS Inspiron 3493 14'\" HD i3-1005G1 1.2GHz 4GB RAM 128GB SSD Win 10 S Negro. Pantalla antirreflejos con retroiluminación LED de 14,0 pulgadas (1366 x 768) no táctil con retroiluminación LED. Procesador Intel Core i3-1005G1 de 10ª generación (caché de 4 MB, hasta 3,4 GHz). Gráficos Intel UHD con memoria gráfica compartida 4GB, 4Gx1, DDR4, 2666MHz. Gráficos Intel UHD con memoria gráfica compartida",
-        "Precio": "649.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1688086-1200-auto?v=637665479680900000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/8Z2bil1iR14",
-        "Categoria":"Dell"
-      },
-      {
-        "id": 5,
-        "Nombre": "Laptop Gaming DELL G5 NVIDIA GTX1650 CI5 10300H 8GB 512GB SSD / W9XCT",
-        "Descripcion":"Dell Computadora Portátil, modelo W9XCT con procesador Intel® Core™ i5, windows 10 Home (64Bit) en español, cuenta con 8 GB de memoria RAM y un almacenamiento interno de 512 GB SSD, pantalla de 15.6\" FHD y una resolución de 1920 x 1080 px, tarjeta gráfica GeForce GTX1650. Su rendimiento es ideal para que juegues durante horas, posee memoria RAM de 8  GB DDR4 y memoria SSD de 512 GB. Posee batería de 3-Cell Battery, 56WHr, 3 puertos USB (1x USB2.0 Gen1 w/ Power Share, 1x USB2.0, 1x USB3.2 Gen1) y un puerto HDMI 2.0; Diseñada en color silver.",
-        "Precio": "1,399.00",
-        "imagen": "https://lcoimgprod-grupounicomer.netdna-ssl.com/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/w/9/w9xct_00_hn.jpg",
-        "Video": "https://youtu.be/FLHAU42QbmE",
-        "Categoria":"Dell"
-      },
-      {
-        "id": 6,
-        "Nombre": "Laptop HP Pavilion Touchscreen ",
-        "Descripcion":"Laptop HP plegable x360 pantalla de 14 pulgadas, con un procesador Intel Core i3-10110U de decima generación, acompañado con un procesador gráfico Intel UHD y 4 GB de ram con almacenamiento de 256GB, incluye lapiz inteligente",
-        "Precio": "680.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1108191-800-auto?v=637486740868230000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/AfNGlkO0fgw",
-        "Categoria":"HP"
-      },
-      {
-        "id": 7,
-        "Nombre": "Laptop HP Spectre 2 en 1 ",
-        "Descripcion":"La laptop HP Spectre x360 2 en 1, pantalla de 14 pulgadas con un procesador Intel Ci7-1165g7 (hasta 4,7 GHz con tecnología Intel® Turbo Boost, 12 MB de caché L3 y 4 núcleos),  con una memoria RAM 16 GB de SDRAM LPDDR4-3200,  unos gráficos Intel Iris X y una memoria ROM de 512GB SSD con 32GB adicionales gracias a su memoria Optane.",
-        "Precio": "2,149.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1216744-800-auto?v=637520234600000000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/jKdfZLXpfEY",
-        "Categoria":"HP"
-      },
-      {
-        "id": 8,
-        "Nombre": "Computadora HP AIO",
-        "Descripcion":"La HP All-in-One es una computadora que combina el diseño ergonómico, funcionalidad y poder. Haz múltiples tareas fácilmente con un procesador Intel Celeron j4025 fiable y almacena más de aquello que te gusta con 1TB de almacenamiento. Acompañado de un procesador gráfico Intel UHD 600. transmite contenido 4K de manera fluida y juega a tus juegos favoritos en 720p sin necesidad de una tarjeta gráfica independiente. Con el excelente rendimiento de los gráficos Intel UHD notarás la diferencia en todo lo que hagas.",
-        "Precio": "499.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1108610-800-auto?v=637487596386900000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/F6Gj5S4vAUY",
-        "Categoria":"HP"
-      },
-      {
-        "id": 9,
-        "Nombre": "Laptop Hp Envy",
-        "Descripcion":"computadora portátil convertible HP Pavilion x360. El procesador Intel® Core ™ i5-1135G7 de undécima generación y los gráficos integrados brindan la combinación perfecta de características para hacerlo imparable. La SDRAM DDR4-3200 de 12 GB proporciona un impulso de alto rendimiento a la multitarea para jugar. Y con un disco duro PCIe® NVMe ™ M.2 SSD de 512 GB , disfruta de un rendimiento 15 veces más rápido que un disco duro tradicional, con espacio más que suficiente para todo lo que hace. ",
-        "Precio": "1399.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1688078-800-auto?v=637665479662300000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/TVoj-2uH8Yo",
-        "Categoria":"HP"
-      },
-      {
-        "id": 10,
-        "Nombre": "Laptop HP gaming Pavilion",
-        "Descripcion":"laptop HP Pavilion Gaming 15. Disfruta de gráficos de alta calidad y capacidad de procesamiento para jugar y realizar múltiples tareas, además del enfriamiento térmico mejorado1 para su rendimiento y estabilidad generales. Sumérgete en el juego gracias a una pantalla de bisel con microborde y audio personalizado. El equilibrio perfecto entre trabajo y juego, para que puedas hacer todo. Procesador móvil AMD Ryzen™ 4000 de la serie H con gráficos Radeon, para obtener un rendimiento absoluto para jugar y crear contenido, los procesadores móviles Ryzen™ 4000 de la serie H son el nuevo estándar para obtener rendimiento profesional en laptops innovadoras, nuevas, delgadas y ligeras.",
-        "Precio": "1049.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/977202-800-auto?v=637414880635770000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/iDamgJenL80",
-        "Categoria":"HP"
-      },
-      {
-        "id": 11,
-        "Nombre": "Laptop de 14 in ideapad celeron n4020 4gb",
-        "Descripcion":"Este portátil diario está alimentado por un procesador Intel Celeron N4020, 4 GB DDR4 RAM, y 64 GB M.2 PCIe SSD de almacenamiento Disfruta de vídeos o navega en línea en un panel de pantalla HD de 14 pulgadas, enmarcado por biseles estrechos.",
-        "Precio": "349.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1574458-1200-auto?v=637624941671770000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/Y8GBosA9odM",
-        "Categoria":"Lenovo"
-      },
-      {
-        "id": 12,
-        "Nombre": "Laptop de 14 in ideapad amd r7-4700u gb - 256 ssd",
-        "Descripcion":"Con un rendimiento impresionante, imágenes y audio, el portátil Lenovo IdeaPad 5 le permite trabajar y jugar desde casi cualquier lugar. Conéctese a la Web y a su impresora de forma inalámbrica y utilice las interfaces para vincular periféricos adicionales o transmitir contenido en su HDTV. Con funciones de seguridad como un obturador de privacidad y un lector de huellas dactilares, podrá disfrutar de una mayor tranquilidad.",
-        "Precio": "849.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1609639-1200-auto?v=637643121327330000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/BvCMEwrpJmE",
-        "Categoria":"Lenovo"
-      },
-      {
-        "id": 13,
-        "Nombre": "Laptop de 14 in ideapad amd r5-3500u 8gb - 128ssd + 1tb hdd fhd",
-        "Descripcion":"Diseñado para un rendimiento duradero, Lenovo ™ IdeaPad ™ 3 ofrece un rendimiento potente con procesadores Intel Pentium y gráficos Intel UHD integrados, en una computadora portátil que es perfecta para sus tareas diarias, con características en las que puede confiar.",
-        "Precio": "699.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1734488-1200-auto?v=637679274520830000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/Wxz4wVba1rk",
-        "Categoria":"Lenovo"
-      },
-      {
-        "id": 14,
-        "Nombre": "Laptop de 15 in ideapad intel ci5-1035g1 8gb - 256 ssd azul",
-        "Descripcion":"Equipado con un procesador Intel Core i5-1035G1 de 10ª generación de cuatro núcleos de 1,0 GHz hasta 3,60 GHz para la velocidad que necesita. Juega, trabaja y navega por la Web.",
-        "Precio": "729.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1855828-1200-auto?v=637716431951470000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/OqOCiJFzSWE",
-        "Categoria":"Lenovo"
-      },
-      {
-        "id": 15,
-        "Nombre": "Laptop de 15 in ideapad gaming 3i intel i7-10750h 8gb - 256ssd gtx - 4gb",
-        "Descripcion":"Es hora de elevar su experiencia de juegos y deportes electrónicos más allá del ámbito de lo aceptable con una PC que se destaca entre su círculo de juegos. Diseñado con los procesadores Intel Core de décima generación de última generación, gráficos NVIDIA® GeForce®, memoria DDR4 y almacenamiento PCIe SSD, Lenovo IdeaPad Gaming 3 proyecta una confianza silenciosa y serena con imágenes fluidas y nítidas y un juego sin interrupciones que se mantiene fresco a través de térmicas mejoradas de 5ª generación.",
-        "Precio": "1199.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1734481-1200-auto?v=637679274503470000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/CQaRsbz1r0Q",
-        "Categoria":"Lenovo"
-      },
-      {
-        "id": 16,
-        "Nombre": "Computadora portatil chipm1 8gbram 256 ssd negro",
-        "Descripcion":"El Apple MacBook Air de 13 in incluye el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rapidez CPU de 8 núcleos y enfréntate a aplicaciones y juegos con uso intensivo de gráficos con la GPU de 7 núcleos. ",
-        "Precio": "1249.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1517148-1200-auto?v=637605721907030000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/VyYt7c07Qt4",
-        "Categoria":"Apple"
-      },
-      {
-        "id": 17,
-        "Nombre": "Apple MacBook Pro M1 de 13.3 in",
-        "Descripcion":"Usado por estudiantes, profesionales creativos y más, el  Apple MacBook Pro de 13,3 in ahora cuenta con el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rápida CPU de 8 núcleos y acepte aplicaciones y juegos con uso intensivo de gráficos con la GPU de 8 núcleos. Acelere las tareas de aprendizaje automático con el motor neuronal de 16 núcleos. Con el sistema de enfriamiento activo y más a 20 horas de reproducción de video, la MacBook Pro puede manejar sus tareas con facilidad.",
-        "Precio": "1899.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1303069-1200-auto?v=637547208829670000&width=1200&height=auto&aspect=true",
-        "Video": "https://youtu.be/LVDZz36R_3g",
-        "Categoria":"Apple"
-      },
-      {
-        "id": 18,
-        "Nombre": "Apple Laptop Macbook Pro 13\" / MYD92LL / 512GB",
-        "Descripcion":"MacBook Pro de 13 pulgadas alcanza un nuevo nivel de potencia y velocidad. El CPU es hasta 2.8 veces más rápido y los gráficos son hasta 5 veces más veloces. El Neural Engine, el más avanzado hasta ahora, permite un aprendizaje automático hasta 11 veces más rápido. Y la batería te acompaña hasta por 20 horas, la mayor duración en una Mac. Integra procesador macOS, memoria RAM de 8 GB, almacenamiento de 512GB. Equipada con Puerto Thunderbolt: 2 Thunderbolt/USB 4, además de conexión  Wi-Fi / Bluetooth, cámara: FaceTime HD, pantalla Retroiluminada por LED. Esta es la MacBook que necesitas, compra ahora a un clic.",
-        "Precio": "2,019.00",
-        "imagen": "https://lcoimgprod-grupounicomer.netdna-ssl.com/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/c/o/comapp1043_z1_1.jpg",
-        "Video": "https://youtu.be/Hlr2KIbm4Y0",
-        "Categoria":"Apple"
-      },
-      {
-        "id": 19,
-        "Nombre": "Apple IMac 27 Intel i5 | 8GB | SSD 256GB",
-        "Descripcion":"Pantalla Retina 5K de 27 pulgadas (en diagonal); resolución de 5.120 por 2.880 compatible con mil millones de colores. 8 GB de memoria DDR4 a 2.400 MHz. Fusion Drive de 1 TB1. Cámara. FaceTime HD. Radeon Pro 570. IMac 2017.",
-        "Precio": "2,399.00",
-        "imagen": "https://www.aeon.com.sv/web/image/product.product/7564/image_1024/%5B09068%5D%20Apple%20IMac%2027%20Intel%20i5%20%7C%208GB%20%7C%20SSD%20256GB?unique=89a0b59",
-        "Video": "https://youtu.be/UbdKsenyoD4",
-        "Categoria":"Apple"
-      },
-      {
-        "id": 20,
-        "Nombre": "Apple MacBook Pro M1",
-        "Descripcion":"el  Apple MacBook Pro de 13,3 pulgadas ahora cuenta con el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rápida CPU de 8 núcleos y acepte aplicaciones y juegos con uso intensivo de gráficos con la GPU de 8 núcleos. Acelere las tareas de aprendizaje automático con el motor neuronal de 16 núcleos. Con el sistema de enfriamiento activo y más a 20 horas de reproducción de video, la MacBook Pro puede manejar sus tareas con facilidad.",
-        "Precio": "1499.00",
-        "imagen": "https://siman.vtexassets.com/arquivos/ids/1303057-800-auto?v=637547208801130000&width=800&height=auto&aspect=true",
-        "Video": "https://youtu.be/Hlr2KIbm4Y0",
-        "Categoria":"Apple"
-      }
-
-
-    ]
-  }
+{
+  "categorias": [
+    {
+      "id": 1,
+      "nombre": "Dell"
+    },
+    {
+      "id": 2,
+      "nombre": "HP"
+    },
+    {
+      "id": 3,
+      "nombre": "Lenovo"
+    },
+    {
+      "id": 4,
+      "nombre": "Apple"
+    }
+  ],
+  "productos": [
+    {
+      "id": 7,
+      "Nombre": "Laptop HP Spectre 2 en 1 ",
+      "Descripcion": "La laptop HP Spectre x360 2 en 1, pantalla de 14 pulgadas con un procesador Intel Ci7-1165g7 (hasta 4,7 GHz con tecnología Intel® Turbo Boost, 12 MB de caché L3 y 4 núcleos),  con una memoria RAM 16 GB de SDRAM LPDDR4-3200,  unos gráficos Intel Iris X y una memoria ROM de 512GB SSD con 32GB adicionales gracias a su memoria Optane.",
+      "Precio": "2,149.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1216744-800-auto?v=637520234600000000&width=800&height=auto&aspect=true",
+      "Video": "https://youtu.be/jKdfZLXpfEY",
+      "Categoria": "HP"
+    },
+    {
+      "id": 8,
+      "Nombre": "Computadora HP AIO",
+      "Descripcion": "La HP All-in-One es una computadora que combina el diseño ergonómico, funcionalidad y poder. Haz múltiples tareas fácilmente con un procesador Intel Celeron j4025 fiable y almacena más de aquello que te gusta con 1TB de almacenamiento. Acompañado de un procesador gráfico Intel UHD 600. transmite contenido 4K de manera fluida y juega a tus juegos favoritos en 720p sin necesidad de una tarjeta gráfica independiente. Con el excelente rendimiento de los gráficos Intel UHD notarás la diferencia en todo lo que hagas.",
+      "Precio": "499.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1108610-800-auto?v=637487596386900000&width=800&height=auto&aspect=true",
+      "Video": "https://youtu.be/F6Gj5S4vAUY",
+      "Categoria": "HP"
+    },
+    {
+      "id": 9,
+      "Nombre": "Laptop Hp Envy",
+      "Descripcion": "computadora portátil convertible HP Pavilion x360. El procesador Intel® Core ™ i5-1135G7 de undécima generación y los gráficos integrados brindan la combinación perfecta de características para hacerlo imparable. La SDRAM DDR4-3200 de 12 GB proporciona un impulso de alto rendimiento a la multitarea para jugar. Y con un disco duro PCIe® NVMe ™ M.2 SSD de 512 GB , disfruta de un rendimiento 15 veces más rápido que un disco duro tradicional, con espacio más que suficiente para todo lo que hace. ",
+      "Precio": "1399.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1688078-800-auto?v=637665479662300000&width=800&height=auto&aspect=true",
+      "Video": "https://youtu.be/TVoj-2uH8Yo",
+      "Categoria": "HP"
+    },
+    {
+      "id": 10,
+      "Nombre": "Laptop HP gaming Pavilion",
+      "Descripcion": "laptop HP Pavilion Gaming 15. Disfruta de gráficos de alta calidad y capacidad de procesamiento para jugar y realizar múltiples tareas, además del enfriamiento térmico mejorado1 para su rendimiento y estabilidad generales. Sumérgete en el juego gracias a una pantalla de bisel con microborde y audio personalizado. El equilibrio perfecto entre trabajo y juego, para que puedas hacer todo. Procesador móvil AMD Ryzen™ 4000 de la serie H con gráficos Radeon, para obtener un rendimiento absoluto para jugar y crear contenido, los procesadores móviles Ryzen™ 4000 de la serie H son el nuevo estándar para obtener rendimiento profesional en laptops innovadoras, nuevas, delgadas y ligeras.",
+      "Precio": "1049.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/977202-800-auto?v=637414880635770000&width=800&height=auto&aspect=true",
+      "Video": "https://youtu.be/iDamgJenL80",
+      "Categoria": "HP"
+    },
+    {
+      "id": 11,
+      "Nombre": "Laptop de 14 in ideapad celeron n4020 4gb",
+      "Descripcion": "Este portátil diario está alimentado por un procesador Intel Celeron N4020, 4 GB DDR4 RAM, y 64 GB M.2 PCIe SSD de almacenamiento Disfruta de vídeos o navega en línea en un panel de pantalla HD de 14 pulgadas, enmarcado por biseles estrechos.",
+      "Precio": "349.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1574458-1200-auto?v=637624941671770000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/Y8GBosA9odM",
+      "Categoria": "Lenovo"
+    },
+    {
+      "id": 12,
+      "Nombre": "Laptop de 14 in ideapad amd r7-4700u gb - 256 ssd",
+      "Descripcion": "Con un rendimiento impresionante, imágenes y audio, el portátil Lenovo IdeaPad 5 le permite trabajar y jugar desde casi cualquier lugar. Conéctese a la Web y a su impresora de forma inalámbrica y utilice las interfaces para vincular periféricos adicionales o transmitir contenido en su HDTV. Con funciones de seguridad como un obturador de privacidad y un lector de huellas dactilares, podrá disfrutar de una mayor tranquilidad.",
+      "Precio": "849.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1609639-1200-auto?v=637643121327330000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/BvCMEwrpJmE",
+      "Categoria": "Lenovo"
+    },
+    {
+      "id": 13,
+      "Nombre": "Laptop de 14 in ideapad amd r5-3500u 8gb - 128ssd + 1tb hdd fhd",
+      "Descripcion": "Diseñado para un rendimiento duradero, Lenovo ™ IdeaPad ™ 3 ofrece un rendimiento potente con procesadores Intel Pentium y gráficos Intel UHD integrados, en una computadora portátil que es perfecta para sus tareas diarias, con características en las que puede confiar.",
+      "Precio": "699.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1734488-1200-auto?v=637679274520830000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/Wxz4wVba1rk",
+      "Categoria": "Lenovo"
+    },
+    {
+      "id": 14,
+      "Nombre": "Laptop de 15 in ideapad intel ci5-1035g1 8gb - 256 ssd azul",
+      "Descripcion": "Equipado con un procesador Intel Core i5-1035G1 de 10ª generación de cuatro núcleos de 1,0 GHz hasta 3,60 GHz para la velocidad que necesita. Juega, trabaja y navega por la Web.",
+      "Precio": "729.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1855828-1200-auto?v=637716431951470000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/OqOCiJFzSWE",
+      "Categoria": "Lenovo"
+    },
+    {
+      "id": 15,
+      "Nombre": "Laptop de 15 in ideapad gaming 3i intel i7-10750h 8gb - 256ssd gtx - 4gb",
+      "Descripcion": "Es hora de elevar su experiencia de juegos y deportes electrónicos más allá del ámbito de lo aceptable con una PC que se destaca entre su círculo de juegos. Diseñado con los procesadores Intel Core de décima generación de última generación, gráficos NVIDIA® GeForce®, memoria DDR4 y almacenamiento PCIe SSD, Lenovo IdeaPad Gaming 3 proyecta una confianza silenciosa y serena con imágenes fluidas y nítidas y un juego sin interrupciones que se mantiene fresco a través de térmicas mejoradas de 5ª generación.",
+      "Precio": "1199.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1734481-1200-auto?v=637679274503470000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/CQaRsbz1r0Q",
+      "Categoria": "Lenovo"
+    },
+    {
+      "id": 16,
+      "Nombre": "Computadora portatil chipm1 8gbram 256 ssd negro",
+      "Descripcion": "El Apple MacBook Air de 13 in incluye el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rapidez CPU de 8 núcleos y enfréntate a aplicaciones y juegos con uso intensivo de gráficos con la GPU de 7 núcleos. ",
+      "Precio": "1249.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1517148-1200-auto?v=637605721907030000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/VyYt7c07Qt4",
+      "Categoria": "Apple"
+    },
+    {
+      "id": 17,
+      "Nombre": "Apple MacBook Pro M1 de 13.3 in",
+      "Descripcion": "Usado por estudiantes, profesionales creativos y más, el  Apple MacBook Pro de 13,3 in ahora cuenta con el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rápida CPU de 8 núcleos y acepte aplicaciones y juegos con uso intensivo de gráficos con la GPU de 8 núcleos. Acelere las tareas de aprendizaje automático con el motor neuronal de 16 núcleos. Con el sistema de enfriamiento activo y más a 20 horas de reproducción de video, la MacBook Pro puede manejar sus tareas con facilidad.",
+      "Precio": "1899.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1303069-1200-auto?v=637547208829670000&width=1200&height=auto&aspect=true",
+      "Video": "https://youtu.be/LVDZz36R_3g",
+      "Categoria": "Apple"
+    },
+    {
+      "id": 18,
+      "Nombre": "Apple Laptop Macbook Pro 13\" / MYD92LL / 512GB",
+      "Descripcion": "MacBook Pro de 13 pulgadas alcanza un nuevo nivel de potencia y velocidad. El CPU es hasta 2.8 veces más rápido y los gráficos son hasta 5 veces más veloces. El Neural Engine, el más avanzado hasta ahora, permite un aprendizaje automático hasta 11 veces más rápido. Y la batería te acompaña hasta por 20 horas, la mayor duración en una Mac. Integra procesador macOS, memoria RAM de 8 GB, almacenamiento de 512GB. Equipada con Puerto Thunderbolt: 2 Thunderbolt/USB 4, además de conexión  Wi-Fi / Bluetooth, cámara: FaceTime HD, pantalla Retroiluminada por LED. Esta es la MacBook que necesitas, compra ahora a un clic.",
+      "Precio": "2,019.00",
+      "imagen": "https://lcoimgprod-grupounicomer.netdna-ssl.com/media/catalog/product/cache/926507dc7f93631a094422215b778fe0/c/o/comapp1043_z1_1.jpg",
+      "Video": "https://youtu.be/Hlr2KIbm4Y0",
+      "Categoria": "Apple"
+    },
+    {
+      "id": 19,
+      "Nombre": "Apple IMac 27 Intel i5 | 8GB | SSD 256GB",
+      "Descripcion": "Pantalla Retina 5K de 27 pulgadas (en diagonal); resolución de 5.120 por 2.880 compatible con mil millones de colores. 8 GB de memoria DDR4 a 2.400 MHz. Fusion Drive de 1 TB1. Cámara. FaceTime HD. Radeon Pro 570. IMac 2017.",
+      "Precio": "2,399.00",
+      "imagen": "https://www.aeon.com.sv/web/image/product.product/7564/image_1024/%5B09068%5D%20Apple%20IMac%2027%20Intel%20i5%20%7C%208GB%20%7C%20SSD%20256GB?unique=89a0b59",
+      "Video": "https://youtu.be/UbdKsenyoD4",
+      "Categoria": "Apple"
+    },
+    {
+      "id": 20,
+      "Nombre": "Apple MacBook Pro M1",
+      "Descripcion": "el  Apple MacBook Pro de 13,3 pulgadas ahora cuenta con el primer chip de Apple diseñado específicamente para Mac. El Apple M1 integra la CPU, GPU, Neural Engine, E / S y más en un solo sistema en un chip (SoC). Aborde sus proyectos con la rápida CPU de 8 núcleos y acepte aplicaciones y juegos con uso intensivo de gráficos con la GPU de 8 núcleos. Acelere las tareas de aprendizaje automático con el motor neuronal de 16 núcleos. Con el sistema de enfriamiento activo y más a 20 horas de reproducción de video, la MacBook Pro puede manejar sus tareas con facilidad.",
+      "Precio": "1499.00",
+      "imagen": "https://siman.vtexassets.com/arquivos/ids/1303057-800-auto?v=637547208801130000&width=800&height=auto&aspect=true",
+      "Video": "https://youtu.be/Hlr2KIbm4Y0",
+      "Categoria": "Apple"
+    },
+    {
+      "Nombre": "sadfsadf",
+      "Descripcion": "sadfasdf",
+      "Precio": "10.6",
+      "imagen": "sadfasdf",
+      "Video": "asdfasdf",
+      "Categoria": "Dell",
+      "id": 21
+    },
+    {
+      "Nombre": "qwerwqer",
+      "Descripcion": "qwerqwer",
+      "Precio": "10.6",
+      "imagen": "adfasfasf",
+      "Video": "asdfasf",
+      "Categoria": "Dell",
+      "id": 22
+    },
+    {
+      "Nombre": "sdafsdfsf",
+      "Descripcion": "casa",
+      "Precio": "10.5",
+      "imagen": "sdfgsfdg",
+      "Video": "dsfgdsfg",
+      "Categoria": "Dell",
+      "id": 23
+    },
+    {
+      "Nombre": "sadfasdf",
+      "Descripcion": "sadfasdf",
+      "Precio": "10.5",
+      "imagen": "asfasdf",
+      "Video": "sdfasdf",
+      "Categoria": "Dell",
+      "id": 24
+    },
+    {
+      "Nombre": "sadfasf",
+      "Descripcion": "safasfd",
+      "Precio": "10",
+      "imagen": "asdfasdf",
+      "Video": "asdfsdf",
+      "Categoria": "Dell",
+      "id": 25
+    },
+    {
+      "Nombre": "asdfsdf",
+      "Descripcion": "asdfasdf",
+      "Precio": "10.5",
+      "imagen": "asdfasfd",
+      "Video": "asdfadf",
+      "Categoria": "Dell",
+      "id": 26
+    },
+    {
+      "Nombre": "asdfasf",
+      "Descripcion": "10.5",
+      "Precio": "2.6",
+      "imagen": "sadfsf",
+      "Video": "sadfsf",
+      "Categoria": "Dell",
+      "id": 27
+    },
+    {
+      "Nombre": "sadfasdf",
+      "Descripcion": "sadfasdf",
+      "Precio": "10",
+      "imagen": "afdadsf",
+      "Video": "sadfasf",
+      "Categoria": "Dell",
+      "id": 28
+    },
+    {
+      "Nombre": "sadfasdf",
+      "Descripcion": "asdfasdf",
+      "Precio": "11",
+      "imagen": "sdfgsfdg",
+      "Video": "sdfgsdg",
+      "Categoria": "Dell",
+      "id": 29
+    },
+    {
+      "Nombre": "fdsgdfdg",
+      "Descripcion": "sdfgsdfg",
+      "Precio": "10.5",
+      "imagen": "dsfgsdfg",
+      "Video": "sdfgsdfg",
+      "Categoria": "Dell",
+      "id": 30
+    },
+    {
+      "Nombre": "asdfsafsdf",
+      "Descripcion": "sdfgdfg",
+      "Precio": "1.0",
+      "imagen": "dsfgsd",
+      "Video": "sdfgsdfg",
+      "Categoria": "Dell",
+      "id": 31
+    },
+    {
+      "Nombre": "sdfgsdfgsdfg",
+      "Descripcion": "dgfhdf",
+      "Precio": "1.2",
+      "imagen": "sadfsdf",
+      "Video": "asdfasdf",
+      "Categoria": "Dell",
+      "id": 32
+    },
+    {
+      "Nombre": "sadfsadfsadf",
+      "Descripcion": "sadfsdaf",
+      "Precio": "110.5",
+      "imagen": "asdfas",
+      "Video": "sdfsadf",
+      "Categoria": "Dell",
+      "id": 33
+    },
+    {
+      "Nombre": "asdfasdfasf",
+      "Descripcion": "sadfdsaf",
+      "Precio": "2",
+      "imagen": "asdfsadf",
+      "Video": "sadfsdf",
+      "Categoria": "Dell",
+      "id": 34
+    },
+    {
+      "Nombre": "sadfsadf",
+      "Descripcion": "sadfsadf",
+      "Precio": "10.5",
+      "imagen": "dsfgdsg",
+      "Video": "dsfgdsfg",
+      "Categoria": "Dell",
+      "id": 35
+    },
+    {
+      "Nombre": "adsfdsf",
+      "Descripcion": "asdfsdf",
+      "Precio": "2.5",
+      "imagen": "asdfasdf",
+      "Video": "asdfasfd",
+      "Categoria": "Dell",
+      "id": 36
+    },
+    {
+      "Nombre": "safgaf",
+      "Descripcion": "asfsdf",
+      "Precio": "2.25",
+      "imagen": "asfdsaf",
+      "Video": "asfdasdf",
+      "Categoria": "Dell",
+      "id": 37
+    },
+    {
+      "Nombre": "sadfsadf",
+      "Descripcion": "sadfasdf",
+      "Precio": "10.5",
+      "imagen": "sadfasdf",
+      "Video": "sadfasdf",
+      "Categoria": "Dell",
+      "id": 38
+    },
+    {
+      "Nombre": "asfdasfd",
+      "Descripcion": "asdfasf",
+      "Precio": "2.6",
+      "imagen": "asdfsdf",
+      "Video": "asfdasdf",
+      "Categoria": "Dell",
+      "id": 39
+    },
+    {
+      "Nombre": "qwerwqr",
+      "Descripcion": "wqerqwer",
+      "Precio": "2.5",
+      "imagen": "qwerqwre",
+      "Video": "wqerwqer",
+      "Categoria": "Dell",
+      "id": 40
+    }
+  ]
+}

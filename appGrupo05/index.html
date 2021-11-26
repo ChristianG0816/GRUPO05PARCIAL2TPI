@@ -22,25 +22,25 @@
     <h1>Computadoras Personales</h1>
     <form name="formAgregar" id="formAgregar">
         <label>Nombre </label>
-        <input name="nombre" id="nombre" type="text">
+        <input name="nombre" id="nombre" type="text" required>
         <label>Descripción </label>
-        <input name="descripcion" id="descripcion" type="text">
+        <input name="descripcion" id="descripcion" type="text" required>
         <label>Precio </label>
-        <input name="precio" id="precio" type="number" step="any" min="0">
+        <input name="precio" id="precio" type="number" step="any" min="0" required>
         <label>Link Imagen </label>
-        <input name="lImagen" id="lImage" type="text">
+        <input name="lImagen" id="lImagen" type="text" required>
         <label>Link Vídeo </label>
-        <input name="lVideo" id="lVideo" type="text">
+        <input name="lVideo" id="lVideo" type="text" required>
         <label>Categoría </label>
         <select name="categoria" id="categoria">
-            <option value="1">Dell</option>
-            <option value="2">HP</option>
-            <option value="3">Lenovo</option>
-            <option value="4">Apple</option>
+            <option value="Dell">Dell</option>
+            <option value="HP">HP</option>
+            <option value="Lenovo">Lenovo</option>
+            <option value="Apple">Apple</option>
         </select>
     </form>
-    <p><button onclick="agregar(nombre(),descripcion(),precio(),imagen(),video(),categoria());">Agregar Computadora</button></p>
-    <p><button onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
+    <p><button onclick="agregar();">Agregar Computadora</button></p>
+    <p><button id="btnObtener" id="btnObtener" onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
 	<div id="listado" style="display:none;">
         <form name="filtroprods" id="filtroprods">
             <p>Categorias</p> 

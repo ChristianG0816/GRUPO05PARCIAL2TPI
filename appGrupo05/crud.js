@@ -8,7 +8,7 @@
     William Enrique Vásquez Mancia
 */
 
-var fila="<tr><td class='id'></td><td class='Nombre'></td><td class='Descripcion'></td><td class='Precio'></td> <td class='imagen'></td><td class='Video'></td><td class='Categoria'></td><td class='Opciones'></td></tr>";
+var fila="<tr><td class='id'></td><td class='Nombre'></td><td class='Descripcion'></td><td class='price'></td> <td class='imagen'></td><td class='Video'></td><td class='Categoria'></td><td class='Opciones'></td></tr>";
 	 var productos=null;
   function codigoCat(catstr) {
 	var code="null";
@@ -36,11 +36,11 @@ function listarProductos(productos) {
 	  ids=document.getElementsByClassName("id");
 	  nombres=document.getElementsByClassName("Nombre");
       descripcion=document.getElementsByClassName("Descripcion"); 
-	  price=document.getElementsByClassName("Price");
+	  price=document.getElementsByClassName("price");
 	  imagen=document.getElementsByClassName("imagen");  
       video=document.getElementsByClassName("Videos");  
       categoria=document.getElementsByClassName("Categoria"); 
-	  if(orden===0) {orden=-1;price.innerHTML="Precio"}
+	  if(orden===0) {orden=-1;price.innerHTML="price"}
 	  else
 	     if(orden==1) {ordenarAsc(productos,"price");price.innerHTML="Precio A";price.style.color="darkgreen"}
 	     else 
@@ -87,56 +87,74 @@ function obtenerProductos() {
 
 }
 
-function nombre(){
-	var texto=document.getElementById('nombre').value;
-	return texto;
-}
-function descripcion(){
-	var texto=document.getElementById('descripcion').value;
-	return texto;
-}
-function precio(){
-	var texto=document.getElementById('precio').value;
-	return texto;
-}
-function imagen(){
-	var texto=document.getElementById('lImagen').value;
-	return texto;
-}
-function video(){
-	var texto=document.getElementById('lVideo').value;
-	return texto;
-}
-function categoria(){
-	var texto=document.getElementById('categoria').value;
-	return texto;
-}
-
-function agregar(nombre, descripcion, precio, imagen,video,categoria){
-	var producto={
-		Nombre:nombre,
-        Descripcion:descripcion,
-		Precio:precio,
-		imagen:imagen,
-        Video:video,
-		Categoria:categoria
+//Agregar una nueva computadora a la base de datos
+window.addEventListener("load", function(){
+	obtenerProductos();
+	document.getElementById("nombre").focus();
+});
+function agregar(){
+	var nombre=document.getElementById('nombre').value.toString().trim();
+	var descripcion=document.getElementById('descripcion').value.toString().trim();
+	var precio=document.getElementById('precio').value.toString().trim();
+	var imagen=document.getElementById('lImagen').value.toString().trim();
+	var video=document.getElementById('lVideo').value.toString().trim();
+	var categoria=document.getElementById('categoria').value.toString().trim();
+	if(nombre==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('nombre').value="";
+		document.getElementById("nombre").focus();
+	}else if(descripcion==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('descripcion').value="";
+		document.getElementById("descripcion").focus();
+	}else if(imagen==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('precio').value="";
+		document.getElementById("precio").focus();
+	}else if(video==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('lImagen').value="";
+		document.getElementById("lImagen").focus();
+	}else if(video==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('lVideo').value="";
+		document.getElementById("lVideo").focus();
+	}else if(categoria==""){
+		alert("No se permiten campos vacíos");
+		document.getElementById('categoria').value="Dell";
+		document.getElementById("categoria").focus();
+	}else{
+		if(document.getElementById('precio').value>=0){
+			var producto={
+				Nombre:nombre,
+				Descripcion:descripcion,
+				Precio:precio,
+				imagen:imagen,
+				Video:video,
+				Categoria:categoria
+			}
+			fetch('http://localhost:3000/productos',
+			{ method:"POST",
+				body: JSON.stringify(producto),
+				headers: {
+					'Accept': 'application/json',
+					'Content-type': 'application/json; charset=UTF-8',	   
+				 }
+			})
+			.then(res=>res.json())
+			.then(data=>data);
+			document.getElementById('nombre').value="";
+			document.getElementById('descripcion').value="";
+			document.getElementById('precio').value="";
+			document.getElementById('lImagen').value="";
+			document.getElementById('lVideo').value="";
+			document.getElementById('categoria').value="Dell";
+			orden*=0;
+			window. location. reload();
+		}else{
+			alert("El precio debe ser un número positivo");
+		}
 	}
-	fetch('http://localhost:3000/productos',
-	{ method:"POST",
-		body: JSON.stringify(producto),
-		headers: {
-			'Accept': 'application/json',
-			'Content-type': 'application/json; charset=UTF-8',	   
-		 }
-	})
-	.then(res=>res.json())
-	.then(data=>data);
-	document.getElementById('nombre').value="";
-    document.getElementById('descripcion').value="";
-	document.getElementById('precio').value="";
-	document.getElementById('lImagen').value="";
-    document.getElementById('lVideo').value="";
-	document.getElementById('categoria').value="";
 }
 
 function ordenarDesc(p_array_json, p_key) {
