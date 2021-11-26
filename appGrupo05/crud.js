@@ -87,31 +87,56 @@ function obtenerProductos() {
 
 }
 
-function agregar(){
+function nombre(){
+	var texto=document.getElementById('nombre').value;
+	return texto;
+}
+function descripcion(){
+	var texto=document.getElementById('descripcion').value;
+	return texto;
+}
+function precio(){
+	var texto=document.getElementById('precio').value;
+	return texto;
+}
+function imagen(){
+	var texto=document.getElementById('lImagen').value;
+	return texto;
+}
+function video(){
+	var texto=document.getElementById('lVideo').value;
+	return texto;
+}
+function categoria(){
+	var texto=document.getElementById('categoria').value;
+	return texto;
+}
+
+function agregar(nombre, descripcion, precio, imagen,video,categoria){
 	var producto={
-		Nombre:document.getElementById('nombre').value,
-        Descripcion:document.getElementById('descripcion').value,
-		Precio:document.getElementById('precio').value,
-		imagen:document.getElementById('lImagen').value,
-        Video:document.getElementById('lVideo').value,
-		Categoria:document.getElementById('categoria').value
+		Nombre:nombre,
+        Descripcion:descripcion,
+		Precio:precio,
+		imagen:imagen,
+        Video:video,
+		Categoria:categoria
 	}
 	fetch('http://localhost:3000/productos',
 	{ method:"POST",
 		body: JSON.stringify(producto),
 		headers: {
-			'Content-Type': 'application/json'
+			'Accept': 'application/json',
+			'Content-type': 'application/json; charset=UTF-8',	   
 		 }
 	})
 	.then(res=>res.json())
-	.then(data=>data);
+	.then(data=>productos=data);
 	document.getElementById('nombre').value="";
     document.getElementById('descripcion').value="";
 	document.getElementById('precio').value="";
 	document.getElementById('lImagen').value="";
     document.getElementById('lVideo').value="";
 	document.getElementById('categoria').value="";
-	obtenerProductos();
 }
 
 function ordenarDesc(p_array_json, p_key) {
