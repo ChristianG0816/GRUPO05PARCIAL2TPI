@@ -149,6 +149,7 @@ function agregar(){
 			document.getElementById('lVideo').value="";
 			document.getElementById('categoria').value="Dell";
 			orden*=0;
+			alert("Se agregó la computadora personal: "+nombre);
 			window. location. reload();
 		}else{
 			alert("El precio debe ser un número positivo");
