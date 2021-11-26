@@ -96,8 +96,7 @@ function agregar(){
         Video:document.getElementById('lVideo').value,
 		Categoria:document.getElementById('categoria').value
 	}
-    var url='http://localhost:3000/productos';
-	fetch(url,
+	fetch('http://localhost:3000/productos',
 	{ method:"POST",
 		body: JSON.stringify(producto),
 		headers: {
@@ -112,6 +111,7 @@ function agregar(){
 	document.getElementById('lImagen').value="";
     document.getElementById('lVideo').value="";
 	document.getElementById('categoria').value="";
+	obtenerProductos();
 }
 
 function ordenarDesc(p_array_json, p_key) {
