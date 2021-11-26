@@ -16,8 +16,30 @@
     <meta name="keywords" content="API Rest, JSON, CSS, HTML, Javascript"/>
     <meta name="description" content="Examen Parcial 2 TPI115-2021"/>
     <title>Computadoras Personales</title>
+    <script src="crud.js"></script>
 </head>
 <body>
-    <h1>Hola</h1>
+    <h1>Computadoras Personales</h1>
+    <p><button onclick="obtenerProductos();this.style.display='none';">Mostrar Computadoras</button></p>
+	<div id="listado" style="display:none;">
+    <!-- Aqui formulario de agregar-->
+        <form name="filtroprods" id="filtroprods">
+            <p>Categorias</p> 
+            <input type="checkbox" id="c1" value="c1" checked>Dell
+            <input type="checkbox" id="c2" value="c2" checked>HP
+            <input type="checkbox" id="c3" value="c3" checked>Lenovo
+            <input type="checkbox" id="c4" value="c4" checked>Apple 
+            <p>Precio</p>  
+            <input type="range" min="0" max="2500"> 
+            
+            <table id="tabla" border="1">
+                <thead>
+                    <tr><th>id</th><th>Nombre</th><th>Descripción</th><th id="price">Precio</th>
+                    <th>imagen</th><th>Video</th><th>Categoria</th><th>Opciones</th></tr>
+                </thead>
+                <tbody id="tbody"></tbody>
+            </table>
+        </form>
+	</div>
 </body>
 </html>
