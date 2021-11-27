@@ -20,11 +20,11 @@ var fila="<tr><td class='id'></td><td class='Nombre'></td><td class='Descripcion
 	}
 	return code;
 }   
-	  var orden=0;
+var orden=0;
 	  
 function listarProductos(productos) {
 	  var precio=document.getElementById("price"); 
-	  precio.setAttribute("onclick", "orden*=-1;listarProductos(productos);");
+	  precio.setAttribute("onclick", "prueba(); listarProductos(productos);");
 	  var num=productos.length;
 	  var listado=document.getElementById("listado");
 	  var ids,nombres,price,descripcion,categoria,imagen,video;
@@ -40,14 +40,24 @@ function listarProductos(productos) {
 	  imagen=document.getElementsByClassName("imagen");  
       video=document.getElementsByClassName("Video");  
       categoria=document.getElementsByClassName("Categoria"); 
-	  if(orden===0) {orden=-1;price.innerHTML="price"}
-	  else
-	     if(orden==1) {ordenarAsc(productos,"price");price.innerHTML="Precio A";price.style.color="darkgreen"}
-	     else 
-	       if(orden==-1) {ordenarDesc(productos,"price");price.innerHTML="Precio D";price.style.color="blue"}
-	
-		  
-	  	  listado.style.display="block";
+	  if(orden===0) {
+		  orden=-1;precio.innerHTML="Precio"
+		}
+	  else{
+	     if(orden==1) {
+			 ordenarAsc(productos,"Precio");
+			 precio.innerHTML="Precio Ascendente";
+			 precio.style.color="darkgreen";
+			}
+	     else{
+			if(orden==-1) {
+				ordenarDesc(productos,"Precio");
+				precio.innerHTML="Precio Descendente";
+				precio.style.color="blue";
+				}
+			}
+	  }
+		listado.style.display="block";
         for(nfila=0;nfila<num;nfila++) {
 
                 ids[nfila].innerHTML=productos[nfila].id;
@@ -59,7 +69,7 @@ function listarProductos(productos) {
                 tr.setAttribute("class",catcode);
                 price[nfila].innerHTML="$"+productos[nfila].Precio;
                 imagen[nfila].innerHTML="<img src='"+productos[nfila].imagen+"'>";
-                //video[nfila].innerHTML="<iframe src='"+productos[nfila].Video+"'></iframe>";
+                //video[nfila].innerHTML="<iframe src='https://www.youtube.com/embed/Hlr2KIbm4Y0'></iframe>";
 				video[nfila].innerHTML="<a href='"+productos[nfila].Video+"' target='_blank'>"+ productos[nfila].Video +"</a>";
             }
 	}
@@ -71,7 +81,7 @@ function obtenerProductos() {
 				productos=data;
 				productos.forEach(
 					function(producto){
-						producto.price=parseFloat(producto.price)
+						producto.Precio=parseFloat(producto.Precio)
 					}
 				);
 				listarProductos(data)
@@ -150,18 +160,23 @@ function agregar(){
 	}
 }
 
-function ordenarDesc(p_array_json, p_key) {
-   p_array_json.sort(function (a, b) {
-      if(a[p_key] > b[p_key]) return -1;
-if(a[p_key] < b[p_key]) return 1;
-return 0;
-   });
+function prueba(){
+	orden*= -1;
 }
 
-function ordenarAsc(p_array_json, p_key) {
-   p_array_json.sort(function (a, b) {
-      if(a[p_key] > b[p_key]) return 1;
-if(a[p_key] < b[p_key]) return -1;
-return 0;
-   });
-}
+function ordenarDesc(p_array_json, p_key) {
+	p_array_json.sort(function (a, b) {
+	   if(a[p_key] > b[p_key]) return -1;
+ if(a[p_key] < b[p_key]) return 1;
+ return 0;
+	});
+ }
+ 
+ function ordenarAsc(p_array_json, p_key) {
+	p_array_json.sort(function (a, b) {
+	   if(a[p_key] > b[p_key]) return 1;
+ if(a[p_key] < b[p_key]) return -1;
+ return 0;
+	});
+ }
+
