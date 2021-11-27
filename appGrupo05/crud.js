@@ -40,6 +40,7 @@ function listarProductos(productos) {
 	  imagen=document.getElementsByClassName("imagen");  
       video=document.getElementsByClassName("Video");  
       categoria=document.getElementsByClassName("Categoria"); 
+	  borrar=document.getElementsByClassName("Opciones");
 	  if(orden===0) {
 		  orden=-1;precio.innerHTML="Precio"
 		}
@@ -71,6 +72,11 @@ function listarProductos(productos) {
                 imagen[nfila].innerHTML="<img src='"+productos[nfila].imagen+"'>";
                 //video[nfila].innerHTML="<iframe src='https://www.youtube.com/embed/Hlr2KIbm4Y0'></iframe>";
 				video[nfila].innerHTML="<a href='"+productos[nfila].Video+"' target='_blank'>"+ productos[nfila].Video +"</a>";
+				borrar[nfila].innerHTML = "<button>Eliminar</button>";
+				borrar[nfila].firstChild.setAttribute(
+				"onclick",
+				"eliminar('" + productos[nfila].id + "');"
+		);
             }
 	}
 
@@ -162,6 +168,13 @@ function agregar(){
 
 function prueba(){
 	orden*= -1;
+}
+
+var id;
+function eliminar(id) {
+	fetch('http://localhost:3000/productos/'+id, { method: "DELETE" }).then(response => response.json()).then(data => productos = data);
+			obtenerProductos();
+			alert("Se ha eliminado la computadora N° " + id);
 }
 
 function ordenarDesc(p_array_json, p_key) {
