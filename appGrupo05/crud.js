@@ -24,7 +24,6 @@ var orden=0;
 	  
 function listarProductos(productos) {
 	  var precio=document.getElementById("price"); 
-	  precio.setAttribute("onclick", "prueba(); listarProductos(productos);");
 	  var num=productos.length;
 	  var listado=document.getElementById("listado");
 	  var ids,nombres,price,descripcion,categoria,imagen,video;
@@ -166,8 +165,20 @@ function agregar(){
 	}
 }
 
-function prueba(){
+function ordenarPre(){
+	let btnquitarordenar=document.getElementById("quitarOrdenarbtn");
 	orden*= -1;
+	listarProductos(productos);
+	btnquitarordenar.style.display="inline";
+}
+
+function quitarOrdenar(){
+	let btnquitarordenar=document.getElementById("quitarOrdenarbtn");
+	var precio=document.getElementById("price"); 
+	orden = 0;
+	precio.style.color="black";
+	btnquitarordenar.style.display="none";
+	obtenerProductos();
 }
 
 var id;
