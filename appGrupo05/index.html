@@ -69,15 +69,34 @@
         <div id="listado" style="display:none;">
             <form name="filtroprods" id="filtroprods">
                 <br/><br/><h3>LISTADO DE COMPUTADORAS PERSONALES</h3>
+                <div class="indicaciones">
+                    <p>OPCIONES</p>
+                        <p class="it">- Se puede filtrar por precios indicando a partir de qué precio</p>
+                        <p class="it">- Se puede filtrar por categoría seleccionando aquellas de preferencia</p>
+                        <p class="it">- Se puede ordenar los productor de forma ascendente o descendente de acuerdo al precio</p>
+                </div>
+                <br/>
+                <!--Filtro por categorías-->
                 <p>Categorias</p> 
                 <input type="checkbox" id="c1" value="c1" checked>Dell
                 <input type="checkbox" id="c2" value="c2" checked>HP
                 <input type="checkbox" id="c3" value="c3" checked>Lenovo
                 <input type="checkbox" id="c4" value="c4" checked>Apple 
-                <p>Precio</p>  
-                <input type="range" min="0" max="2500"> 
+                <br/>
+                <!--Ordenamiento por precio-->
+                <p>Ordenar por precio</p> 
                 <button id="ordenarbtn" type="button" onclick="ordenarPre();">Ordenar por Precio</button>
-                <button id="quitarOrdenarbtn" type="button" onclick="quitarOrdenar();">Eliminar ordenamiento</button>   
+                <button id="quitarOrdenarbtn" type="button" onclick="quitarOrdenar();">Eliminar ordenamiento</button>  
+
+                <!--Filtro por precio-->
+                <p>Filtrar por precio</p>
+                <section id="form">
+                    <label>Mínimo: </label><input id="numMi" type="number">
+                    <label>Máximo: </label><input id="numMa" type="number">
+                </section> 
+                <br/>
+
+
                 <table id="tabla" border="1">
                     <thead>
                         <tr>

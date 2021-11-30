@@ -60,7 +60,7 @@ ul li{
 
 button{
     border-radius: 15px;
-    width: 10em;
+    width: 12em;
     height: 3em;
     color: cornsilk;
     background-color: rgb(0, 0, 22);
@@ -162,6 +162,32 @@ th #price {cursor:pointer;}
     padding: 12px 20px;
     margin: 8px 0;
     display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 16px;
+  }
+  
+.indicaciones{
+    display:inline-block;
+    text-align: left;
+    width: 100%;
+}
+#listado #filtroprods .indicaciones .it{
+    padding-left: 2%;
+    line-height: 1.5em;
+    text-align: left;
+    font-weight: normal;
+}
+#bloque #form label {
+    border: 0px solid #ccc;
+    text-align: left;
+    font-size: 16px;
+  }
+#bloque #form input{
+    padding: 12px 20px;
+    margin: 8px 0;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
