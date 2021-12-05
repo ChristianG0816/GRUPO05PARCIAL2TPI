@@ -86,7 +86,7 @@ function listarProductos(productos) {
       "' target='_blank'>" +
       productos[nfila].Video +
       "</a>";
-    borrar[nfila].innerHTML = "<button>Eliminar</button><a>Actualizar</a>";
+    borrar[nfila].innerHTML = "<button>Eliminar</button><a class='actualizar' >Actualizar</a>";
     borrar[nfila].firstChild.setAttribute(
       "onclick",
       "eliminar('" + productos[nfila].id + "');"
@@ -95,6 +95,52 @@ function listarProductos(productos) {
       "href",
       "actualizar.html?id=" + productos[nfila].id
     );
+  }
+
+  //FILTRO DE PRECIOS
+  var inputMax = document.querySelector("#numMa");
+  var inputMin = document.querySelector("#numMi");
+  var filas = document.querySelectorAll("tr");
+  if (inputMax || inputMin) {
+    //filtro de precio maximo
+    inputMax.addEventListener(`input`, () => {
+      const { value } = inputMax;
+      let cont = 0;
+      let precios = document.querySelectorAll(".price");
+      precios.forEach((precio) => {
+        var actual = parseFloat(precio.innerText.slice(1));
+        cont++;
+
+        if (actual > value || actual < inputMin.value) {
+          filas[cont].style.display = "none";
+        } else {
+          filas[cont].style.display = "table-row";
+        }
+      });
+    });
+    //filtro de precio minimo
+    inputMin.addEventListener(`input`, () => {
+      const { value } = inputMin;
+      let cont = 0;
+      let precios = document.querySelectorAll(".price");
+      precios.forEach((precio) => {
+        var actual = parseFloat(precio.innerText.slice(1));
+        cont++;
+        if (inputMax.value != "") {
+          if (actual < value || actual > inputMax.value) {
+            filas[cont].style.display = "none";
+          } else {
+            filas[cont].style.display = "table-row";
+          }
+        } else {
+          if (actual < value) {
+            filas[cont].style.display = "none";
+          } else {
+            filas[cont].style.display = "table-row";
+          }
+        }
+      });
+    });
   }
 }
 
