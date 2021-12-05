@@ -9,3 +9,5 @@ el servidor de json
 npm install -g json-server 
 
 Al realizar estos pasos ya funcionara el archivo .bat
+
+[Ver el Sitio](https://christiang0816.github.io/GRUPO05PARCIAL2TPI/appGrupo05/index.html)
