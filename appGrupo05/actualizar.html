@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Miguel Angel Amaya Rodriguez" />
+    <meta name="author" content="Christian Javier Ayala Guerra" />
+    <meta name="author" content="Diego José Ayala Guerra" />
+    <meta name="author" content="Luis Alonso Cornejo Jiménez" />
+    <meta name="author" content="Carolina Isabel Pineda Delgado" />
+    <meta name="author" content="José Gustavo Pineda Delgado" />
+    <meta name="author" content="William Enrique Vásquez Mancia" />
+    <meta name="keywords" content="API Rest, JSON, CSS, HTML, Javascript" />
+    <meta name="description" content="Examen Parcial 2 TPI115-2021" />
+    <LINK REL=StyleSheet HREF="style.css" TYPE="text/css" MEDIA=screen>
+        <script src="actualizar.js"></script>
+    <title>Actualizar Computadora</title>
+</head>
+
+<body>
+    <h1>ACTUALIZA TUS DATOS</h1>
+    <section id="bloque">
+        <form name="formAgregar" id="formAgregar">
+            <label>Nombre </label>
+            <input name="nombre" id="nombre" type="text" required>
+            <label>Descripción </label>
+            <input name="descripcion" id="descripcion" type="text" required>
+            <label>Precio </label>
+            <input name="precio" id="precio" type="number" step="any" min="0" required>
+            <label>Link Imagen </label>
+            <input name="lImagen" id="lImagen" type="text" required>
+            <label>Link Vídeo </label>
+            <input name="lVideo" id="lVideo" type="text" required>
+            <label>Categoría </label>
+            <select name="categoria" id="categoria">
+                <option value="Dell">Dell</option>
+                <option value="HP">HP</option>
+                <option value="Lenovo">Lenovo</option>
+                <option value="Apple">Apple</option>
+            </select>
+        </form>
+        <section id="but">
+            <section id="butt">
+                <p><button onclick="actualizar();">Actualizar Computadora</button></p>
+            </section>
+        </section>
+    </section>
+</body>
+
+</html>
